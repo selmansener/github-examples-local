@@ -4,14 +4,14 @@
     {
         static void Main(string[] args)
         {
+            var hesapMakinasi = new HesapMakinesi();
             Console.WriteLine("3 ve 5 toplamı");
-            int sonuc = Topla(3, 5);
+            int sonuc = hesapMakinasi.Topla(3, 5);
             Console.WriteLine(sonuc);
-        }
 
-        static int Topla(int sayi1, int sayi2) 
-        { 
-            return sayi1 + sayi2;
+            Console.WriteLine("5 eksi 3 sonucu");
+            sonuc = hesapMakinasi.Cikar(5, 3);
+            Console.WriteLine(sonuc);
         }
     }
 }
